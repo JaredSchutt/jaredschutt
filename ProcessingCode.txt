@@ -1,0 +1,105 @@
+import processing.sound.*; //Note: you need to go to Import Library in Sketch
+SoundFile file;            //Click "Add Library" and search for and add "Sound"
+                           
+short count;
+
+void setup(){
+}
+
+void draw(){
+  
+}
+
+void keyPressed() {
+  if (key == CODED) {
+    if ((count == 2) && (keyCode == RIGHT)) {
+      file = new SoundFile(this, "Tecumseh2.mp3"); //Change this to your CharacterX monologue
+  file.play();
+    }
+  }
+  
+  if (key == CODED) {
+    if ((count == 2) && (keyCode == LEFT)) {
+      file = new SoundFile(this, "SorryTryAgain.mp3");
+  file.play();
+    }
+  }
+  
+  if (key == CODED) {
+    if ((count == 2) && (keyCode == UP)) {
+      file = new SoundFile(this, "SorryTryAgain.mp3");
+  file.play();
+    }
+  }
+  
+  if (key == CODED) {
+    if ((count == 0) && (keyCode == LEFT)) {
+      file = new SoundFile(this, "IsaacBrock2.mp3"); //Change this to your CharacterY monologue
+  file.play();
+    }
+  }
+  
+  if (key == CODED) {
+    if ((count == 0) && (keyCode == RIGHT)) {
+      file = new SoundFile(this, "SorryTryAgain.mp3");
+  file.play();
+    }
+  }
+  
+  if (key == CODED) {
+    if ((count == 0) && (keyCode == UP)) {
+      file = new SoundFile(this, "SorryTryAgain.mp3");
+  file.play();
+    }
+  }
+  
+  if (key == CODED) {
+    if ((count == 1) && (keyCode == UP)) {
+      file = new SoundFile(this, "LauraSecord2.mp3"); //Change this to your CharacterZ monologue
+  file.play();
+    }
+  }
+  
+  if (key == CODED) {
+    if ((count == 1) && (keyCode == RIGHT)) {
+      file = new SoundFile(this, "SorryTryAgain.mp3");
+  file.play();
+    }
+  }
+  
+   if (key == CODED) {
+    if ((count == 1) && (keyCode == LEFT)) {
+      file = new SoundFile(this, "SorryTryAgain.mp3");
+  file.play();
+    }
+  }
+  
+  if (keyCode != ' ')    return;
+
+  redraw();
+
+  if (++count > 2)  count = 0;
+
+
+  switch(count) {
+  case 0:
+    println("Zero");
+    file = new SoundFile(this, "IsaacBrock1.mp3"); //Change this to your CharacterX clue
+  file.play();
+    break;
+
+  case 1:
+    println("One");
+      file = new SoundFile(this, "LauraSecord1.mp3"); //Change this to your CharacterY clue
+  file.play();
+    break;
+
+  case 2:
+    println("Two");
+    file = new SoundFile(this, "Tecumseh1.mp3"); //Change this to your CharacterZ clue
+  file.play();
+    break;
+  
+  }
+
+}
