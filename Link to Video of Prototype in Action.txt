@@ -1,1 +1,3 @@
-Video example of our prototype in action here: https://drive.google.com/open?id=1iAXN2uPg359URgZFvWVOebxNdWuxgcHi
+Rough video of our prototype in action (missing some features): https://drive.google.com/open?id=1ExSDykqz74qOzvKhWTliISoj5J6oVN1h
+
+Better video example of our prototype in action here: https://drive.google.com/open?id=1iAXN2uPg359URgZFvWVOebxNdWuxgcHi
